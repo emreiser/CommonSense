@@ -1,0 +1,15 @@
+development:
+  TWILIO_SID: "your sid here"
+  TWILIO_TOKEN: "your token here"
+  TWILIO_NUMBER: "your twilio number here"
+
+test:
+  TWILIO_SID: "your sid here"
+  TWILIO_TOKEN: "your token here"
+  TWILIO_NUMBER: "your twilio number here"
+
+
+production:
+  TWILIO_SID: "your sid here"
+  TWILIO_TOKEN: "your token here"
+  TWILIO_NUMBER: "your twilio number here"

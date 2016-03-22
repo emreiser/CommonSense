@@ -1,0 +1,18 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: my2sense_development
+  pool: 5
+
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: my2sense_test
+  pool: 5
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: my2sense_production
+  pool: 5
