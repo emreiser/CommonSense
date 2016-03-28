@@ -1,6 +1,6 @@
 class TwilioController < ApplicationController
-  protect_from_forgery with: :null_session
-  
+  skip_before_action :verify_authenticity_token
+
   def index 
     message_body = params["Body"]
     from_number = params["From"]
@@ -10,7 +10,7 @@ class TwilioController < ApplicationController
     @twilio_client.account.sms.messages.create(
       from: ENV["TWILIO_NUMBER"],
       to: from_number,
-      body: "Howdy! This is your neighborhood sensor reporting for duty. Check out all of the environmental things I can sense here: http://bit.ly/1PpPJD3"
+      body: "Howdy! Your neighborhood sensor reporting for duty. Check out what I can sense here: http://bit.ly/1PpPJD3"
     )
   end
 end
